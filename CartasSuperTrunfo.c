@@ -13,7 +13,7 @@ char Nome [30] = "Estado: A";
 
     
 //estado de Rio de Janeiro
-    char Nome2 [30] = "Carta 2;";   
+    char Nome2 [30] = "Carta 2";   
     char Nome1[20] =  "Estado B";
     char nome_2 [40]= "Codigo: B02";
     char nome_22 [80] = "Nome da cidade: Rio de Janeiro";
@@ -23,36 +23,17 @@ char Nome [30] = "Estado: A";
     int turistico = 30;
     
 // cadastro de cartas
- char cadastro [30] = "Carta 2;";   
-    char cadastro1 [20] =  "Estado B";
-    char cadastro12 [40]= "Codigo: B02";
-    char cadastro13 [80] = "Nome da cidade: Rio de Janeiro";
-    int cadastro14 = 6748000;
-    float cadastro15 = 1200.25;
-    float cadastro16 = 300.50;
-    int cadastro17 = 30;
+ char cadastro; 
+    char cadastro1[30];
+    char cadastro12[30];
+    char cadastro13[30];
+    int cadastro14;
+    float cadastro15;
+    float cadastro16;
+    int cadastro17;
 
-
-printf("Cadastre a sua carta\n");
-printf("qual o numero da sua carta: ");
-scanf("%s",&cadastro);
-printf("qual o estado: ");
-scanf("%s",&cadastro1);
-printf("qual o codigo: ");
-scanf("%s",&cadastro12);
-printf("qual o nome da sua cidade: ");
-scanf("%s",&cadastro13);
-printf("qual a população: ");
-scanf("%d",&cadastro14);
-printf("qual a area km²: ");
-scanf("%.2f",&cadastro15);
-printf("qual o Pib: ");
-scanf("%.2f",&cadastro16);
-printf("Quantos Pontos turisticos: ");
-scanf("%d",&cadastro17);
-
-
-
+//exemplo
+printf("cadastre suas cartas de acordo com os exemplos!!\n");
 
     //estado de São Paulo
     printf("\n%s\n%s\n%s\n%s\n",nome_111, Nome, nome_11, nome_1);
@@ -65,12 +46,63 @@ scanf("%d",&cadastro17);
     printf("População: %d\n", populacao);
     printf("Área: %.2f Km²\n", area2);
     printf("Pib: %.3f Bilhões de reais\n", pib);
-    printf("Numero de Pontos Turistico: %d\n", turistico); 
-    
-    
-    
+    printf("Numero de Pontos Turistico: %d\n\n", turistico);
 
 
+
+
+printf("Cadastre a sua carta\n");
+
+printf("qual o numero da sua carta: ");
+scanf("%s",&cadastro);
+
+printf("qual o estado: ");
+scanf("%s",&cadastro1);
+
+printf("qual o codigo: ");
+scanf("%s",&cadastro12);
+
+printf("qual o nome da sua cidade: ");
+scanf("%s[^\n]",&cadastro13);
+
+printf("qual a população: ");
+scanf("%d",&cadastro14);
+
+printf("qual a area km²: ");
+scanf("%d",&cadastro15);
+
+printf("qual o Pib: ");
+scanf("%d",&cadastro16);
+
+printf("Quantos Pontos turisticos: ");
+scanf("%d",&cadastro17);
+
+printf("\nCadastre a sua carta\n");
+printf("qual o numero da sua carta: ");
+scanf("%s",&cadastro);
+
+printf("qual o estado: ");
+scanf("%s",&cadastro1);
+
+printf("qual o codigo: ");
+scanf("%s",&cadastro12);
+
+printf("qual o nome da sua cidade: ");
+scanf("%s[^\n]",&cadastro13);
+
+printf("qual a população: ");
+scanf("%d",&cadastro14);
+
+printf("qual a area km²:");
+scanf("%f",&cadastro15);
+
+printf("qual o Pib: bilhoes");
+scanf("%f",&cadastro16);
+
+printf("Quantos Pontos turisticos:");
+scanf("%d",&cadastro17);
+
+    
 
 return 0;
 
